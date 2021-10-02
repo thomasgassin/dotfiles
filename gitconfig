@@ -49,3 +49,6 @@
 
 [pull]
   rebase = false
+[user]
+	email = thomas.gassin@gmail.com
+	name = thomasgassin
