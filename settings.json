@@ -1,60 +1,54 @@
 {
+    "[python]": {
+        "editor.bracketPairColorization.enabled": false,
+        "editor.guides.bracketPairs": false,
+        "editor.tabSize": 4
+    },
+    "editor.bracketPairColorization.enabled": true,
     "editor.detectIndentation": false,
-    "editor.formatOnPaste": true,
+    "editor.fontSize": 14,
+    "editor.guides.bracketPairs": true,
     "editor.minimap.enabled": false,
     "editor.multiCursorModifier": "ctrlCmd",
-    "editor.insertSpaces": true,
-    "editor.tabSize": 2,
-    "editor.rulers":
-    [
+    "editor.renderControlCharacters": true,
+    "editor.rulers": [
         80,
         120
     ],
-    "editor.renderControlCharacters": true,
-    "editor.snippetSuggestions": "top",
-    "editor.trimAutoWhitespace": true,
-    "editor.useTabStops": true,
-    "editor.fontSize": 17,
-    "editor.scrollBeyondLastLine": true,
     "editor.showFoldingControls": "always",
-    "emmet.includeLanguages":
-    {
+    "editor.snippetSuggestions": "top",
+    "editor.tabSize": 2,
+    "emmet.includeLanguages": {
         "erb": "html"
     },
+    "emmet.showSuggestionsAsSnippets": true,
     "emmet.triggerExpansionOnTab": true,
     "explorer.confirmDelete": false,
-    "window.restoreWindows": "none",
-    "workbench.settings.editor": "json",
-    "workbench.settings.openDefaultSettings": true,
-    "workbench.settings.useSplitJSON": true,
-    "workbench.iconTheme": "vscode-great-icons",
-    "files.hotExit": "off",
-    "files.insertFinalNewline": true,
-    "files.trimFinalNewlines": true,
-    "files.trimTrailingWhitespace": true,
-    "files.exclude":
-    {
-        "**/.git": true,
-        "**/.DS_Store": true,
-        "node_modules": true,
-        "tmp": true,
-        "log": true,
+    "files.exclude": {
+        "__pycache__": true,
+        "_site": true,
         ".asset-cache": true,
         ".bundle": true,
         ".ipynb_checkpoints": true,
         ".pytest_cache": true,
         ".sass-cache": true,
         ".svn": true,
-        "__pycache__": true,
-        "_site": true,
+        "**/.DS_Store": true,
+        "**/.egg-info": true,
+        "**/.git": true,
         "build": true,
         "coverage": true,
         "dist": true,
+        "log": true,
+        "node_modules": true,
         "public/packs": true,
-        "**/.egg-info": true
+        "tmp": true
     },
-    "files.watcherExclude":
-    {
+    "files.hotExit": "off",
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "files.watcherExclude": {
         "**/audits/**": true,
         "**/coverage/**": true,
         "**/log/**": true,
@@ -63,17 +57,31 @@
         "**/vendor/**": true
     },
     "git.enabled": false,
-    "telemetry.enableTelemetry": false,
-    "telemetry.enableCrashReporter": false,
-    "[python]":
-    {
-        "editor.tabSize": 4
-    },
-    "python.pythonPath": "~/.pyenv/shims/python",
+    "notebook.diff.ignoreMetadata": true,
+    "notebook.lineNumbers": "on",
+    "notebook.markup.fontSize": 13,
+    "python.defaultInterpreterPath": "~/.pyenv/shims/python",
     "python.formatting.provider": "yapf",
-    "ruby.lint":
-    {
+    "python.languageServer": "Pylance",
+    "python.linting.enabled": false,
+    "python.linting.flake8Enabled": false,
+    "python.linting.pylintEnabled": false,
+    "python.terminal.activateEnvironment": false,
+    "ruby.lint": {
         "rubocop": true
     },
-    "workbench.startupEditor": "newUntitledFile"
+    "search.exclude": {
+      // Inherits all glob patterns from the `files.exclude` setting.
+      "**/.venv": true
+    },
+    "telemetry.telemetryLevel": "off",
+    "window.restoreWindows": "none",
+    "window.newWindowDimensions": "maximized",
+    "workbench.editor.enablePreview": true,
+    "workbench.iconTheme": "vscode-great-icons",
+    "workbench.settings.editor": "json",
+    "workbench.settings.openDefaultSettings": true,
+    "workbench.settings.useSplitJSON": true,
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.panel.defaultLocation": "right",
 }
